@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2- CrossCutting", "4.2- C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Data.CrossCutting.IoC", "src\Infra.Data.CrossCutting.IoC\Infra.Data.CrossCutting.IoC.csproj", "{50F6C221-522F-4E3D-B42C-70E357FBCCC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Data.CrossCutting.Bus", "src\Infra.Data.CrossCutting.Bus\Infra.Data.CrossCutting.Bus.csproj", "{6AA3FE83-06A7-4905-B0A8-B039E5FEE55B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{50F6C221-522F-4E3D-B42C-70E357FBCCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50F6C221-522F-4E3D-B42C-70E357FBCCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50F6C221-522F-4E3D-B42C-70E357FBCCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA3FE83-06A7-4905-B0A8-B039E5FEE55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA3FE83-06A7-4905-B0A8-B039E5FEE55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA3FE83-06A7-4905-B0A8-B039E5FEE55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA3FE83-06A7-4905-B0A8-B039E5FEE55B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 		{E360F6C7-BA85-4584-A822-5A08CE6D0547} = {5029E37F-9A7A-4418-99C2-F49F3E14AA49}
 		{17902913-8164-435C-8ADE-9E2501768249} = {5029E37F-9A7A-4418-99C2-F49F3E14AA49}
 		{50F6C221-522F-4E3D-B42C-70E357FBCCC9} = {17902913-8164-435C-8ADE-9E2501768249}
+		{6AA3FE83-06A7-4905-B0A8-B039E5FEE55B} = {17902913-8164-435C-8ADE-9E2501768249}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF49A899-12D2-469A-95E1-53BBF510114A}
