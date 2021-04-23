@@ -1,5 +1,6 @@
-﻿using Domain.Commands.Enderecos;
-using Domain.Core.Commands;
+﻿using Domain.Core.Commands;
+using Domain.Entities.Contatos;
+using Domain.Entities.Enderecos;
 using System;
 using System.Collections.Generic;
 
@@ -13,8 +14,8 @@ namespace Domain.Commands.Clientes
 
         public DateTime DataNascimento { get; protected set; }
 
-        public EnderecoCommand Endereco { get; protected set; }
+        public Endereco Endereco { get; protected set; }
 
-        public IEnumerable<ContatoCommand> Contatos { get; protected set; }
+        public IEnumerable<Contato> Contatos { get; protected set; }
     }
 }

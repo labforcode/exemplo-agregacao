@@ -1,4 +1,5 @@
-﻿using Domain.Commands.Enderecos;
+﻿using Domain.Entities.Contatos;
+using Domain.Entities.Enderecos;
 using System;
 using System.Collections.Generic;
 
@@ -9,8 +10,8 @@ namespace Domain.Commands.Clientes.Actions
         public InsertClienteCommand(Guid clienteId,
                                     string nome,
                                     DateTime dataNascimento,
-                                    EnderecoCommand endereco,
-                                    IEnumerable<ContatoCommand> contatos)
+                                    Endereco endereco,
+                                    IEnumerable<Contato> contatos)
         {
             ClienteId = clienteId;
             Nome = nome;
