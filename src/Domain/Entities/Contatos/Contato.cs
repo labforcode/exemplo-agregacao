@@ -1,15 +1,18 @@
 ﻿using Domain.Core.DomainObjects.Entities;
 using Domain.Entities.Clientes;
+using System;
 
 namespace Domain.Entities.Contatos
 {
     public class Contato : Entity
     {
-        public Contato(string nome,
+        public Contato(Guid clienteId,
+                       string nome,
                        string telefoneResidencial,
                        string whatsapp,
                        string telefoneComercial)
         {
+            ClienteId = clienteId;
             Nome = nome;
             TelefoneResidencial = telefoneResidencial;
             Whatsapp = whatsapp;
@@ -17,6 +20,8 @@ namespace Domain.Entities.Contatos
         }
 
         public Contato() { }
+
+        public Guid ClienteId { get; private set; }
 
         public string Nome { get; private set; }
 

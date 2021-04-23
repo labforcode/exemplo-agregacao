@@ -1,11 +1,13 @@
 ﻿using Domain.Core.DomainObjects.Entities;
 using Domain.Entities.Clientes;
+using System;
 
 namespace Domain.Entities.Enderecos
 {
     public class Endereco : Entity
     {
-        public Endereco(string cep,
+        public Endereco(Guid clienteId,
+                        string cep,
                         string logradouro,
                         string numero,
                         string complemento,
@@ -13,6 +15,7 @@ namespace Domain.Entities.Enderecos
                         string cidade,
                         string estado)
         {
+            ClienteId = clienteId;
             Cep = cep;
             Logradouro = logradouro;
             Numero = numero;
@@ -23,6 +26,8 @@ namespace Domain.Entities.Enderecos
         }
 
         public Endereco() { }
+
+        public Guid ClienteId { get; private set; }
 
         public string Cep { get; private set; }
 
